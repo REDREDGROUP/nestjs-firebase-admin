@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import * as admin from 'firebase-admin';
 
 @Injectable()
-export class FirebaseRemoteConfigService implements admin.remoteConfig.RemoteConfig {
+export class FirebaseRemoteConfigService {
   constructor(public readonly app: admin.app.App) {}
 
   get remoteConfig() {

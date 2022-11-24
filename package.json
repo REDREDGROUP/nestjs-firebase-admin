@@ -1,22 +1,12 @@
 {
-  "name": "@aginix/nestjs-firebase-admin",
-  "version": "2.2.0",
+  "name": "@redredgroup/nestjs-firebase-admin",
+  "version": "1.0.0",
   "description": "Firebase Admin module for Nest framework",
-  "authors": [
-    {
-      "name": "Nonpawit Teerachetmongkol",
-      "email": "nonpawit.tee@aginix.tech"
-    },
-    {
-      "name": "Michael Musso",
-      "email": "mmusso@smth.it"
-    }
-  ],
   "main": "./dist/index.js",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Aginix/nestjs-firebase-admin.git"
+    "url": "https://github.com/redredgroup/nestjs-firebase-admin.git"
   },
   "scripts": {
     "test": "jest --config jest.json",
@@ -31,17 +21,14 @@
     "publish:next": "npm publish --access public --tag next",
     "prepare": "npm run build"
   },
-  "peerDependencies": {
-    "@nestjs/common": "^8.0.0",
-    "@nestjs/core": "^8.0.0"
-  },
   "dependencies": {
-    "firebase-admin": "^9.7.0"
+    "@firebase/app-types": "0.8.1",
+    "firebase-admin": "^11.0.0"
   },
   "devDependencies": {
-    "@nestjs/common": "^8.0.0",
-    "@nestjs/core": "^8.0.0",
-    "@nestjs/testing": "^8.0.0",
+    "@nestjs/common": "^9.2.0",
+    "@nestjs/core": "^9.2.0",
+    "@nestjs/testing": "^9.2.0",
     "@types/jest": "^26.0.10",
     "@types/node": "13.13.5",
     "dotenv": "^8.1.0",

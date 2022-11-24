@@ -1,9 +1,26 @@
 import { Injectable } from '@nestjs/common';
 import * as admin from 'firebase-admin';
+import { ActionCodeSettings } from 'firebase-admin/lib/auth/action-code-settings-builder';
+import { ProjectConfigManager } from 'firebase-admin/lib/auth/project-config-manager';
+import { DecodedAuthBlockingToken } from 'firebase-admin/lib/auth/token-verifier';
 
 @Injectable()
-export class FirebaseAuthenticationService implements admin.auth.Auth {
+export class FirebaseAuthenticationService {
   constructor(public readonly app: admin.app.App) {}
+
+  projectConfigManager(): ProjectConfigManager {
+    throw new Error('Method not implemented.');
+  }
+  generateVerifyAndChangeEmailLink(
+    email: string,
+    newEmail: string,
+    actionCodeSettings?: ActionCodeSettings,
+  ): Promise<string> {
+    throw new Error('Method not implemented.');
+  }
+  _verifyAuthBlockingToken(token: string, audience?: string): Promise<DecodedAuthBlockingToken> {
+    throw new Error('Method not implemented.');
+  }
 
   get auth() {
     if (!this.app) {
