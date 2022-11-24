@@ -1,6 +1,6 @@
 {
   "name": "@redredgroup/nestjs-firebase-admin",
-  "version": "1.0.0",
+  "version": "1.0.1.1",
   "description": "Firebase Admin module for Nest framework",
   "main": "./dist/index.js",
   "license": "MIT",
@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "@firebase/app-types": "0.8.1",
+    "@google-cloud/storage": "^6.7.0",
     "firebase-admin": "^11.0.0"
   },
   "devDependencies": {
